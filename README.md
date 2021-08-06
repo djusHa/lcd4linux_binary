@@ -1,7 +1,7 @@
 # lcd4linux_binary
 ---
 
-latest lcd4linux and serdisplib 1.97 for debian.
+Latest lcd4linux and serdisplib 1.97 for Debian.
 
 Install Debians lcd4linux Package first
 
