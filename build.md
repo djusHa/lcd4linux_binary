@@ -6,6 +6,7 @@ apt install \
   autoconf \
   libtool \
   libtool-bin \
+  libusb-dev \
   gettext \
   pkg-config \
   libusb-0.1-4 \
