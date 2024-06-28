@@ -1,6 +1,4 @@
-
-
-
+```
 apt install \
   git \
   wget \
@@ -38,3 +36,4 @@ cd serdisplib-2.02
 ./configure --enable-libusb
 make
 checkinstall
+```
