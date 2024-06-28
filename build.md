@@ -16,6 +16,18 @@ apt install \
   libmariadb-dev-compat \
   checkinstall
 
+### compile Serdisplib
+-----------------------
+wget https://netcologne.dl.sourceforge.net/project/serdisplib/serdisplib/2.02/serdisplib-2.02.tar.gz?viasf=1 -O serdisplib.tar.gz
+tar -xvzf serdisplib.tar.gz
+cd serdisplib-2.02
+./configure --enable-libusb
+make
+checkinstall
+
+
+### compile LCD4Linux
+----------------------
 ln -s /usr/bin/automake /usr/bin/automake-1.14
 ln -s /usr/bin/aclocal /usr/bin/aclocal-1.14
 
@@ -30,11 +42,5 @@ libtoolize && automake --add-missing
 make
 
 checkinstall
-
-wget https://netcologne.dl.sourceforge.net/project/serdisplib/serdisplib/2.02/serdisplib-2.02.tar.gz?viasf=1 -O serdisplib.tar.gz
-tar -xvzf serdisplib.tar.gz
-cd serdisplib-2.02
-./configure --enable-libusb
-make
-checkinstall
 ```
+> Execute "ldconfig" after install
